@@ -6,6 +6,7 @@ print(indexes)
 train = iris[indexes, ]
 test = iris[-indexes, ]
 install.packages("tree")
+library(tree)
 model = tree(formula = Species~.  , data=train)
 summary(model)
 plot(model)
